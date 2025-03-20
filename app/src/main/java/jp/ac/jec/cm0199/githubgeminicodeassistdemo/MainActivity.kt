@@ -28,10 +28,18 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+    companion object {
+        // jp) 未使用の変数を追加することで、GithubのGemini Code Assistが機能するか確認する
+        // en) Add an unused variable to check if Github's Gemini Code Assist works
+        private const val TAG = "MainActivity"
+    }
 }
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    // jp) 未使用の変数を追加することで、GithubのGemini Code Assistが機能するか確認する
+    // en) Add an unused variable to check if Github's Gemini Code Assist works
+                val text = "Hello $name!"
     Text(
         text = "Hello $name!",
         modifier = modifier
